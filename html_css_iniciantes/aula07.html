@@ -1,0 +1,64 @@
+<!-- Código desenvolvido pelo professor e apresentado na aula -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>FORMULÁRIO</h1>
+    <form action="envia_dados.php" method="post" enctype="multipart/form-data">
+        <p>
+            Nome: <input type="text" name="nome">
+            Sobrenome: <input type="text" name="sobrenome">
+        </p>
+        <fieldset>
+            <legend>DESENVOLVIMENTO</legend>
+            <p>
+                <label>
+                    <input type="radio" name="opcoes" value="html">HTML
+                </label>
+                <label>
+                    <input type="radio" name="opcoes" value="css">CSS
+                </label>
+            </p>
+            <p>
+                <input type="checkbox" name="tecnologia" value="html">Eu sei HTML
+                <input type="checkbox" name="tecnologia" value="css">Eu sei CSS
+            </p>
+            <p>
+                <select>
+                    <option value="" selected>Selecione uma opção:</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="jquery">JQuery</option>
+                    <option value="php">PHP</option>
+                    <option value="java">JAVA</option>
+                </select>
+                <select>
+                    <option value="" selected>Selecione uma opção:</option>
+                    <optgroup label="Desenvolvimento">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="jquery">JQuery</option>
+                    </optgroup>
+                    <optgroup label="Programacao">
+                        <option value="php">PHP</option>
+                        <option value="java">JAVA</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+        <p>
+            Mensagem<br>
+            <textarea name="mensagem" cols="100" rows="10"></textarea>
+        </p>
+        <input type="reset" value="LIMPAR" name="limpar">
+        <input type="submit" value="ENVIAR" name="enviar">
+    </form>
+</body>
+</html>
