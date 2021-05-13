@@ -1,0 +1,14 @@
+/* Estilização do Layout com Tabelas */
+* {margin: 0px; padding: 0px;}
+body {font-size: 20px;}
+.borda {border: 1px solid #000;}
+.geral {width: 100%;}
+.cabecalho {text-align: center;}
+.conteudo {height: 500px;}
+.menu {width: 25%;}
+.listaMenu {display: table; padding-top: 50%;}
+.listaMenuAjuste {padding-top: 0;}
+.conteudoPrincipal {padding: 10px;}
+.linha {width: 100%;}
+.itens {width: 25%; text-align: center;}
+.rodape {text-align: center;}
