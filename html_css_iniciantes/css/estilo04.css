@@ -1,0 +1,7 @@
+.familia {font-family: Georgia, Garamond, serif;}
+.tamanho {font-size: 30px;}
+.italico {font-style: italic;}
+.maisculas_pequenas {font-variant: small-caps;}
+.peso {font-weight: bold;}
+/* Todas essas atribuições, podem ser definidas na propriedade 'font' */
+.exemplo {font: italic small-caps bold 30px Georgia, Garamond, serif;}
