@@ -1,0 +1,13 @@
+.bordas {width: 400px; font-size: 20px; padding: 20px; border-width: 3px; border-style: solid; border-color: orange;}
+.caixa {width: 400px;}
+p {padding: 5px; margin: 10px; text-align: center; border-color: orange; border-width: 4px;}
+.solido {border-style: solid;}
+.pontilhado {border-style: dotted;}
+.tracejado {border-style: dashed;}
+.duplo {border-style: double;}
+.groove {border-style: groove;}
+.cume {border-style: ridge;}
+.insercao {border-style: inset;}
+.inicio {border-style: outset;}
+.oculto {border-style: hidden;}
+.arredondadas {width: 400px; padding: 20px; border: 3px solid orange; border-radius: 8px;}
