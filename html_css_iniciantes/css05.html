@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo05.css">
+    <title>Aula 05 - CSS</title>
+</head>
+<body>
+    <!-- Propriedade de texto no CSS -->
+    <!-- O professor usou vários exemplos sequenciais, eu anexei todos os exemplos em um só documento e atribuí uma classe para cada parágrafo. Podendo assim ser mais fácil de visualizar as diferentes propriedas de texto aplicadas. -->
+    <p class="cor">Este texto possui a cor azul.</p>
+    <p class="alinha_esquerda">Este texto está alinhado à esquerda.</p>
+    <p class="alinha_direito">Este texto está alinhado à direita.</p>
+    <p class="alinha_centro">Este texto está alinhado ao centro.</p>
+    <p class="alinha_justificado">Este texto está alinhado ao justificado.</p>
+    <p class="paragrafo">Este texto está identado como um parágrafo convencional, ou seja, a primeira linha tem identação informada no CSS, porém as linhas subsequentes não soferão este tipo de identação.</p>
+    <p class="espaco">Este texto tem espaçamento entre letras aplicado.</p>
+    <p class="outro_espaco">Este texto tem espaçamento entre as palavras aplicado.</p>
+    <p class="linha_acima">Este texto tem uma linha por cima.</p>
+    <p class="linha_meio">Este texto tem uma linha no meio.</p>
+    <p class="linha_abaixo">Este texto tem uma linha por baixo.</p>
+    <a href="#">Este hiperlink não tem sublinhado.</a>
+    <p class="maiusculas">Este texto foi transformado em maiúsculas.</p>
+    <p class="minusculas">Este texto foi transformado em minúsculas.</p>
+    <p class="primeira_palavra">O primeiro caracter de cada palavra é renderizado em maiúscula.</p>
+    <!-- Explicando a propriedade 'text-shadow': 
+        A propriedade text-shadow é usada para aplicar efeitos de sombra ao texto.
+        Você pode usar a propriedade text-shadow para aplicar sombras, brilhos externos e outros efeitos de sombra ao texto.
+        A propriedade text-shadow aceita uma lista de valores. Cada item na lista pode ter dois, três ou quatro valores.
+        
+        Os dois primeiros valores são valores de comprimento que definem o deslocamento horizontal e vertical da sombra, respectivamente (esses dois valores são obrigatórios). Um terceiro valor de comprimento pode ser usado para definir o raio de desfoque da sombra (opcional). E um valor de cor pode ser usado para definir a cor da sombra(também opcional)
+    
+        Podemos aplicar vários efeitos de sombra em uma única declaração text-shadow, separando cada conjunto de valores com uma vírgula. Vários efeitos de sombra são aplicados na ordem especificada e, portanto, podem se sobrepor uns aos outros, mas nunca sobreporão o próprio texto.
+    
+        As sombras de texto não são cortadas na forma sombreada e podem ser exibidas se o texto for parcialmente transparente. Além disso, as sombras de texto não influenciam o layout e não acionam a rolagem nem aumentam o tamanho da área rolável. 
+    
+        Vamos ver na prática.   -->
+        <p class="sombra_obrigatoria">Se o seu navegador suportar a propriedade de sombra de texto CSS, esse texto terá uma sombra! Este texto contém apenas os dois primeiros valores obrigatórios.</p>
+        <p class="sombra_terceiro">Se o seu navegador suportar a propriedade de sombra de texto CSS, esse texto terá uma sombra! Este texto contém os dois valores obrigatórios de sombra e o raio de desfalque.</p>
+        <p class="sombra_completa">Se o seu navegador suportar a propriedade de sombra de texto CSS, esse texto terá uma sombra! Este texto contém todos os quatro valores de sombra; os dois obrigatórios mais o valor de raio de desfalque e a cor da sombra, vermelho!</p>
+        <p class="teste_um_sombra">Se o seu navegador suportar a propriedade de sombra de texto CSS, esse texto terá uma sombra! Este texto contém o valor obrigatório do deslocamento horizontal zerado para teste, porém o valor obrigatório do deslocamento vertical mantido.</p>
+        <p class="teste_dois_sombra">Se o seu navegador suportar a propriedade de sombra de texto CSS, esse texto terá uma sombra! Este texto contém o valor obrigatório do deslocamento vertical zerado para testes, porém o valor obrigatório do deslocamento horizontal mantido.</p>
+        <p class="teste_tres_sombra">Se o seu navegador suportar a propriedade de sombra de texto CSS, esse texto terá uma sombra! Este texto contém os quatro valores e na linha subsequente outros quatro valores diferentes. A intenção é de visualizar a dupla funcionalidade da propriedadade.</p>
+        <!-- Explicando a propriedade white-space: 
+            A propriedade white-space é usada para controlar o espaço em branco. Diz ao navegador como lidar com o espaço em branco. 
+        
+            Vamos ver na prática -->
+        <p class="espaco_normal">Este texto está na configuração padrão de qubra de linhas.
+            Cada linha deste texto está digitada em uma linha diferente.
+                        E esta linha do texto, tem identação diferente das outras duas.
+        </p>
+        <p class="espaco_pre">Este texto está na configuração chamada pre de quebra de linhas.
+            Cada linha deste texto está digitada em uma linha diferente.
+                        E esta linha do texto, tem identação diferente das outras duas.
+        </p>
+        <p class="espaco_nowrap">Este texto está na configuração chamada nowrap de quebra de linhas.
+            Cda linha deste texto está digitada em uma linha diferente.
+                        E esta linha do texto, tem identação diferente das outras duas.
+        </p>
+</body>
+</html>

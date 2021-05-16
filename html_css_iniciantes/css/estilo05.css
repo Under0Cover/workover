@@ -1,0 +1,23 @@
+.cor {color: blue;}
+.alinha_esquerda {text-align: left;}
+.alinha_direito {text-align: right;}
+.alinha_centro {text-align: center;}
+.alinha_justificado {text-align: justify;}
+.paragrafo {text-indent: 50px;}
+.espaco {letter-spacing: 5px;}
+.outro_espaco {word-spacing: 50px;}
+.linha_acima {text-decoration: overline;}
+.linha_meio {text-decoration: line-through;}
+.linha_abaixo {text-decoration: underline;}
+a:link {text-decoration: none;}
+.maiusculas {text-transform: uppercase;}
+.minusculas {text-transform: lowercase;}
+.primeira_palavra {text-transform: capitalize;}
+.sombra_obrigatoria {text-shadow: 2px 2px;}
+.sombra_terceiro {text-shadow: 2px 2px 8px;}
+.sombra_completa {text-shadow: 2px 2px 8px red;}
+.teste_um_sombra {text-shadow: 0px 2px;}
+.teste_dois_sombra {text-shadow: 2px 0px;}
+.teste_tres_sombra {text-shadow: 10px 10px 10px blue, -10px -10px 10px red; width: 600px; padding: 20px; font-size: 20px; text-align: justify;}
+.espaco_normal {white-space: normal;}
+.espaco_pre {white-space: pre;}
