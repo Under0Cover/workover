@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo06.css">
+    <title>Background</title>
+</head>
+<body>
+    <!-- OBS: As bordas foram aplicadas para determinar as separações das diferente DIVs -->
+    <h4>Trabalhando com Background</h4>
+    <!-- Para definir a cor de fundo de um elemento, use a propriedade background-color: -->
+    <div class="cor_de_fundo">Esta DIV tem uma cor de fundo aplicada!</div>
+    <!-- Para adicionar uma imagem de fundo a um elemento, use a propriedade background-image -->
+    <div class="imagem">Esta DIV tem uma imagem de fundo aplicada!</div>
+    <!--Para determinar se a imagem de fundo se repete dentro do bloco ou não, use a propriedade background-repeat -->
+    <div class="repete">Esta DIV tem uma imagem de fundo aplicada, mas não se repete!</div>
+    <!-- Também pode-se determinar a forma como a imagem se repete dentro de um elemento. De forma horizontal -->
+    <div class="repete_horizontal">Esta DIV tem uma imagem de fundo aplicada, e que se repete na horizontal.</div>
+    <!-- E de forma vertical -->
+    <div class="repete_vertical">Esta DIV tem uma imagem de fundo aplicada, e que se repete na vertical.</div>
+    <!-- Também pode-se aplicar mais de uma propriedade de background ao mesmo tempo. Veja -->
+    <div class="conjunto">Esta DIV tem uma imagem de fundo aplicada e que não se repete, e também, tem uma cor de fundo aplicada.</div>
+    <!-- Veja o comportamento de todas as propriedades aplicadas, com a imagem se repetindo na horizontal -->
+    <div class="conjunto_horizontal">Esta DIV tem uma imagem de fundo aplicado e que se repete na horizontal e com uma cor de fundo aplicada.</div>
+    <!-- Veja o comportamento de todas as propriedades aplicadas, com a imagem se repetindo na vertical -->
+    <div class="conjunto_vertical">Esta DIV tem uma imagem de fundo aplicado e que se repete na vertical e com uma cor de fundo aplicada.</div>
+    <!-- Agora que já vimos o comportamento da imagem dentro de uma DIV, podemos utilizar o background-position para posicionar a imagem de fundo. Essa opção do background só funciona caso a imagem não tenha repetição infinita. -->
+    <div class="posicao">Esta DIV tem uma imagem de fundo posicionada a 100 pixels da esquerda.</div>
+    <!-- Para determinar se a imagem de plano de fundo rola ou não com o container externo, usamos a propriedade background-attachment -->
+    <div class="nao_movimenta">Esta DIV tem uma imagem de fundo fixa. Ela não rola com o container externo. Este exemplo usa a propriedade de estouro de CSS para forçar a caixa a rolar quando há muito texto para caber na caixa.</div>
+    <!-- Podemos controlar o tamanho da imagem do plano de fundo com o background-size. Veja -->
+    <div class="tamanho">Esta DIV tem uma imagem de fundo com tamanho modificado.</div>
+    <!-- Podemos usar a propriedade background para definir todas as propriedades de plano de fundo de uma só vez -->
+    <div class="completo">Esta DIV está usando todos os atributos em um só background.</div>
+</body>
+</html>
