@@ -1,0 +1,9 @@
+ul {font-size: 40px; list-style-type: circle;}
+.inside {list-style-position: inside;}
+.outside {list-style-position: outside;}
+.abreviada {list-style: square inside;}
+.circulo {list-style-type: circle;}
+.disco {list-style-type: disc;}
+.quadrado {list-style-type: square;}
+.romana_maiusculas {list-style-type: upper-roman;}
+.romana_minusculas {list-style-type: lower-roman;}
