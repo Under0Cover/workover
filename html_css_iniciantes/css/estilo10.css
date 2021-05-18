@@ -1,0 +1,4 @@
+body {font-size: 22px;}
+.relativo {position: relative; left: 50px; background-color: orange; width: 140px;}
+.absoluto {position: absolute; top: 350px; left: 50px; background-color: orangered; width: 150px; padding: 20px;}
+.fixo {position: fixed; top: 200px; left: 300px; background-color: orchid; width: 150px; padding: 20px;}
