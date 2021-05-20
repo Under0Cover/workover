@@ -1,0 +1,33 @@
+/* Zerando documento */
+* {margin: 0; padding: 0; overflow: hidden;}
+
+/* Editando a linha como geral */
+.linha {width: 100%; float: left; margin-bottom: 30px;}
+.coluna {background-color: brown; height: 80px; float: left;}
+
+/* Linha 1 */
+.linha_um .coluna {width: 100%;}
+
+/* Linha 2 */
+.linha_dois .coluna {width: 48%;}
+.linha_dois .coluna:last-child {float: right;}
+
+/* Linha 3 */
+.linha_tres .coluna {width: 30.66%; margin-right: 4%;}
+.linha_tres .coluna:last-child {margin-right: 0%;}
+
+/* Linha 4 */
+.linha_quatro .coluna {width: 22%; margin-right: 4%;}
+.linha_quatro .coluna:last-child {margin-right: 0%;}
+
+/* Linha 5 */
+.linha_cinco .coluna {width: 16.8%; margin-right: 4%;}
+.linha_cinco .coluna:last-child {margin-right: 0%;}
+
+/* Linha 6 */
+.linha_seis .coluna {width: 13.33%; margin-right: 4%;}
+.linha_seis .coluna:last-child {margin-right: 0%;}
+
+/* Linha 7 */
+.linha_sete .coluna {width: 10.85%; margin-right: 4%;}
+.linha_sete .coluna:last-child {margin-right: 0%;}
