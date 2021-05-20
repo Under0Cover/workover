@@ -1,0 +1,11 @@
+.caixa {height: 100px; width: 250px; padding: 10px; font: 16px Arial, sans-serif; border: 4px solid #ccc; overflow: auto;}
+/* O overflow: auto; é gerado automaticamente a barra de rolagem quando e onde for necessário.
+    Você também pode especificar se quer a barra de rolagem horizontal ou vertical.
+    overflow-x é utilizado para a barra de rolagem horizontal.
+    overflow-y é utilizado para a barra de rolagem vertical.
+    Atenção!!!!! Utilizar o overflow especificando horizontal ou vertical não te dá garantias de que o texto todo estará presente.
+
+    Veja o exemplo, onde o texto passa da div e não é apresentado. */   
+
+.caixa_dois {background-color: yellow; width: 300px; height: 200px; overflow: hidden; overflow-y: auto;}
+p {width: 700px;}
