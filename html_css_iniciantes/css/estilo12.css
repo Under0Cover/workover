@@ -1,0 +1,6 @@
+body {font-size: 22px;}
+.flutuar_esquerda {float: left; background-color: orange; width: 150px; padding: 20px; margin-right: 20px;}
+.flutuar_direita {float: right; background-color: orange; width: 150px; padding: 20px; margin-right: 20px;}
+/* No exemplo a div foi setada no CSS, porém, como no meu documento estou usando outros exemplos, vou setar os estilos nas duas classes. */
+.flutuar_exemplo {padding: 20px; font-size: 30px; background-color: orange; float: left; margin-top: 100px;}
+.sem_flutuar {padding: 20px; font-size: 30px; background-color: #eee;}
