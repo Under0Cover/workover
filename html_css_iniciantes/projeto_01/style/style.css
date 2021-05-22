@@ -1,5 +1,21 @@
+/*Folha de Estilo*/
+
 /* Resetando CSS */
 * {margin: 0; padding: 0;}
+body {font-family: Arial, Helvetica, sans-serif; color: #959595;}
+a {text-decoration: none; color: #f71d1d}
+a:hover {color: #900}
+ul {list-style: none;}
 
 /* Globais */
 .linha {width: 100%; float: left; margin-bottom: 50px;}
+.conteudo {width: 1024px; margin: 0 auto;}
+
+/* Cabeçalho */
+.cabecalho {padding: 10px 0;}
+.cabecalho-logo {float: left;}
+.cabecalho-logo h1 a {color: #959595;}
+.html {color: #016fba}
+.css {color: #e54d26;}
+.cabecalho_menu {float: right; padding: 9px 0;}
+.cabecalho_menu ul li a {display: inline-block; margin-left: 20px;}
