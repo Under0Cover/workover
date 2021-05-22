@@ -1,0 +1,8 @@
+/* Folha de Estilo */
+
+/* Resetando */
+* {margin: 0; padding: 0;}
+
+/* Globais */
+.linha {width: 100%; float: left;}
+.conteudo {width: 960px; margin: 0 auto;}
