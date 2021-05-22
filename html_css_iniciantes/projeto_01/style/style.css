@@ -33,7 +33,20 @@ h1, h2 {color: darkred;}
 .main-menu ul li {margin-top: 20px;}
 .main-conteudo {float: right; width: 840px;}
 .main-conteudo a {text-decoration: none;}
-.main-conteudo a:hover {text-decoration: none;}
 .main-conteudo a p {color: #959595;}
+.main-conteudo a:hover h1 {text-decoration: underline;}
+.main-conteudo a:hover p {text-decoration: underline;}
 .main-conteudo h1 {font-size: 20px; margin: 10px 0;}
 .main-conteudo p {margin-bottom: 28px;}
+
+/* Últimos Artigos */
+.artigos {padding: 30px 0; background-color: #faaffa;}
+.artigos_titulo {font-size: 30px; color: #f71d1d; margin: 0 0 15px 0; border-bottom: 2px solid #f71d1d; padding-bottom: 5px;}
+.artigos_coluna {float: left; text-align: justify; width: 30.66%; margin-right: 4%;}
+.artigos_coluna:last-child {margin-right: 0;}
+.artigos_coluna a {color: #900}
+.artigos_coluna a:hover {text-decoration: underline;}
+.artigos_coluna h2 {font-size: 20px; margin-bottom: 10px;}
+
+/* Rodapé */
+.rodape {text-align: center; padding: 20px 0;}
