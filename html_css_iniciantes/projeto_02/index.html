@@ -111,7 +111,7 @@
     <div class="linha contato">
         <div class="conteudo">
             <h1>entre em contato conosco!</h1>
-            <form name="contato" action="">
+            <form name="formulario_contato" action="">
                 <div class="contato_coluna">
                     <label for="">
                         <span>Nome:</span>
@@ -122,11 +122,13 @@
                         <input type="email" name="email" id="email" placeholder="Digite o seu E-mail">
                     </label>
                 </div>
-                <div class="contota_coluna">
-                    <span>Mensagem:</span>
-                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite a sua mensagem"></textarea>
+                <div class="contato_coluna">
+                    <label for="">
+                        <span>Mensagem:</span>
+                        <textarea name="mensagem" id="mensagem" placeholder="Digite a sua mensagem"></textarea>
+                    </label>
                 </div>
-                <p>
+                <p class="botao">
                     <input type="reset" value="limpar">
                     <input type="submit" value="enviar">
                 </p>

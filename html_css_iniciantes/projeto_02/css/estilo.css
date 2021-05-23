@@ -1,12 +1,13 @@
 /* Folha de Estilo */
 
 /* Resetando */
-* {margin: 0; padding: 0;}
+* {margin: 0; padding: 0; box-sizing: border-box;}
 body {font-family: 'Lato', sans-serif; color: #fff; background-color: #2c3e50;}
 a {color: #fff; text-decoration: none;}
 a:hover {color: #579add;}
 ul {list-style: none;}
 img {max-width: 100%;}
+input, textarea {border: 2px solid #fff; border-radius: 5px; background-color: #eee; font-family: 'Lato', sans-serif; padding: 15px 5px; font-size: 18px;}
 
 /* Globais */
 .linha {width: 100%; float: left;}
@@ -50,4 +51,12 @@ img {max-width: 100%;}
 .conteudo_tecnologias:hover .cover img {transform: scale(1.1);}
 
 /* Contato */
-.contato {padding: 100px 0;}
+.contato {padding: 100px 0; background-color: #5e81a3;}
+.contato h1 {color: #fff; text-align: center; margin-bottom: 20px;}
+.contato_coluna {width: 48%; margin-right: 4%; float: left;}
+.contato_coluna:nth-child(2) {margin-right: 0; float: right;}
+.contato_coluna label {width: 100%; float: left; margin-bottom: 15px;}
+.contato_coluna label span {float: left; font-size: 18px; font-weight: 700; margin-bottom: 5px;}
+.contato_coluna label input, .contato_coluna label textarea {float: left; width: 100%;}
+.contato_coluna label textarea {height: 154px;}
+.botao input {text-transform: uppercase; float: right; margin-left: 10px;}
