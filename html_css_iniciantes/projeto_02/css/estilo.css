@@ -48,3 +48,6 @@ img {max-width: 100%;}
 .cover {height: 184px;}
 .cover img {transition: all .5s ease;}
 .conteudo_tecnologias:hover .cover img {transform: scale(1.1);}
+
+/* Contato */
+.contato {padding: 100px 0;}
