@@ -2,7 +2,24 @@
 
 /* Resetando */
 * {margin: 0; padding: 0;}
+body {font-family: 'Lato', sans-serif; color: #fff; background-color: #2c3e50;}
+a {color: #fff; text-decoration: none;}
+a:hover {color: #579add;}
+ul {list-style: none;}
 
 /* Globais */
 .linha {width: 100%; float: left;}
 .conteudo {width: 960px; margin: 0 auto;}
+
+/* Cabeçalho */
+/* Logo */
+.cabecalho {padding: 30px 0;}
+.cabecalho_logo {float: left; position: relative;}
+.cabecalho_logo::after {content: ""; position: absolute; width: 63%; height: 24px; background-color: #fff; top: -30px; left: 0;}
+.cabecalho_logo::before {content: ""; position: absolute; width: 37%; height: 24px; background-color: #579add; top: -30px; right: 0;}
+.cabecalho_logo h1 a {font-size: 56px; color: #fff;}
+.cabecalho_logo h1 a span {color: #579add;}
+/* Menu */
+.cabecalho_menu {float: right; padding: 9px 0; text-align: right;}
+.cabecalho_menu p {color: #579add; margin-bottom: 10px;}
+.cabecalho_menu ul li {display: inline-block; margin-left: 10px;}
