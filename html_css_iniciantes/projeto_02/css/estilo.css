@@ -6,6 +6,7 @@ body {font-family: 'Lato', sans-serif; color: #fff; background-color: #2c3e50;}
 a {color: #fff; text-decoration: none;}
 a:hover {color: #579add;}
 ul {list-style: none;}
+img {max-width: 100%;}
 
 /* Globais */
 .linha {width: 100%; float: left;}
@@ -30,3 +31,20 @@ ul {list-style: none;}
 .conteudo h1 {text-transform: uppercase; font-size: 50px; font-weight: normal; color: #579add; margin-bottom: 10px;}
 .conteudo p {margin-bottom: 30px;}
 .conteudo p a {text-transform: uppercase; font-size: 18px; border: 1px solid #fff; padding: 10px 20px; border-radius: 10px;}
+
+/* Tecnologias */
+/* Títulos e Gerais */
+.tecnologias {background-color: #fff; padding: 40px 0;}
+.tecnologias h1 {font-size: 22px;}
+.titulo_tecnologias {color: #579add; border-bottom: 4px solid #ccc; padding-bottom: 10px; margin-bottom: 15px;}
+.titulo_tecnologias span {border-bottom: 4px solid #579add; padding-bottom: 10px;}
+/* Conteúdo */
+.conteudo_tecnologias {float: left; width: 30.66%; margin-right: 4%;}
+.conteudo_tecnologias:last-child {margin-right: 0;}
+.conteudo_tecnologias a {color: #999;}
+.conteudo_tecnologias a:hover {color: #579add;}
+.conteudo_tecnologias a h2 {color: #333; font-size: 18px; margin: 10px 0;}
+/* Efeito da Imagem */
+.cover {height: 184px;}
+.cover img {transition: all .5s ease;}
+.conteudo_tecnologias:hover .cover img {transform: scale(1.1);}
