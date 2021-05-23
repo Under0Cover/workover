@@ -51,7 +51,7 @@ input, textarea {border: 2px solid #fff; border-radius: 5px; background-color: #
 .conteudo_tecnologias:hover .cover img {transform: scale(1.1);}
 
 /* Contato */
-.contato {padding: 100px 0; background-color: #5e81a3;}
+.contato {padding: 50px 0; background-color: #5e81a3;}
 .contato h1 {color: #fff; text-align: center; margin-bottom: 20px;}
 .contato_coluna {width: 48%; margin-right: 4%; float: left;}
 .contato_coluna:nth-child(2) {margin-right: 0; float: right;}
@@ -59,4 +59,14 @@ input, textarea {border: 2px solid #fff; border-radius: 5px; background-color: #
 .contato_coluna label span {float: left; font-size: 18px; font-weight: 700; margin-bottom: 5px;}
 .contato_coluna label input, .contato_coluna label textarea {float: left; width: 100%;}
 .contato_coluna label textarea {height: 154px;}
-.botao input {text-transform: uppercase; float: right; margin-left: 10px;}
+.botao input {text-transform: uppercase; float: right; margin-left: 10px; padding: 10px 20px; font-size: 16px; color: #fff; cursor: pointer;}
+.botao input[type="reset"] {background-color: rgba(248, 65, 65, .7);}
+.botao input[type="reset"]:hover {background-color: rgba(248, 65, 65, 1);}
+.botao input[type="submit"] {background-color: rgba(50, 185, 50, .7);}
+.botao input[type="submit"]:hover {background-color: rgba(50, 185, 50, 1);}
+
+/* Rodape */
+.rodape {padding: 30px 0;}
+.rodape span {float: left;}
+.rodape ul {float: right}
+.rodape ul li {display: inline-block; margin-left: 15px;}
