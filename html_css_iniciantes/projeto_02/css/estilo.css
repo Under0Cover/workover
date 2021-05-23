@@ -26,6 +26,7 @@ ul {list-style: none;}
 
 /* Destaque */
 .destaque {font-size: 26px; text-align: center; margin: 10px 0 50px 0;}
+.destaque .conteudo {width: 800px;}
 .conteudo h1 {text-transform: uppercase; font-size: 50px; font-weight: normal; color: #579add; margin-bottom: 10px;}
-.conteudo p {margin-bottom: 20px;}
+.conteudo p {margin-bottom: 30px;}
 .conteudo p a {text-transform: uppercase; font-size: 18px; border: 1px solid #fff; padding: 10px 20px; border-radius: 10px;}
