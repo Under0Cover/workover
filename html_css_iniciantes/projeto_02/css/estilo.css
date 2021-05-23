@@ -23,3 +23,9 @@ ul {list-style: none;}
 .cabecalho_menu {float: right; padding: 9px 0; text-align: right;}
 .cabecalho_menu p {color: #579add; margin-bottom: 10px;}
 .cabecalho_menu ul li {display: inline-block; margin-left: 10px;}
+
+/* Destaque */
+.destaque {font-size: 26px; text-align: center; margin: 10px 0 50px 0;}
+.conteudo h1 {text-transform: uppercase; font-size: 50px; font-weight: normal; color: #579add; margin-bottom: 10px;}
+.conteudo p {margin-bottom: 20px;}
+.conteudo p a {text-transform: uppercase; font-size: 18px; border: 1px solid #fff; padding: 10px 20px; border-radius: 10px;}
