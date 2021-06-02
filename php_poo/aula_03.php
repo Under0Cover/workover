@@ -1,10 +1,17 @@
 <?php
 // CONSTRUCTOR
 
+
 class Login {
     private $email;
     private $senha;
     private $nome;
+
+    /* 
+        O construtor é inicializado assim que uma classe é instanciada, 
+        no caso do exemplo => $logar = new Login('teste@teste.com', '123456', 'Tales Oliver');
+        O construtor nada mais é do que um método
+    */
 
     public function __construct($email, $senha, $nome) {
         $this->nome = $nome;
