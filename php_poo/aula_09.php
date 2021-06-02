@@ -1,7 +1,7 @@
 <?php
 // Métodos e Atributos estáticos
 
-class Login {
+class Logar {
 	public static $user;
 	
 	public static function verificarLogin() {
@@ -23,14 +23,14 @@ class Login {
 // Login::verificarLogin();
 
 // Para atribuir um valor ao atríbuto estático basta seguir a mesma ideia
-Login::$user = 'admin';
+Logar::$user = 'admin';
 
-Login::verificarLogin();
+Logar::verificarLogin();
 
 echo '<hr>';
 
 // Com metodos não estáticos, devemos instanciar a classe
-$logar = new Login();
+$logar = new Logar();
 $logar->sairSistema();
 
 echo '<hr>';
