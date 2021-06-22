@@ -1,0 +1,14 @@
+{
+    "name": "oliver/workover",
+    "description": "Aprendendo a criar o composer.json na unha",
+    "type": "project",
+    "require": {
+    },
+    "license": "public",
+    "authors": [
+        {
+            "name": "Tales Oliver",
+            "email": "talis.oliveira@hotmail.com.br"
+        }
+    ]
+}
