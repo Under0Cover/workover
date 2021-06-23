@@ -5,7 +5,7 @@ require_once 'vendor/autoload.php';
 
 use Cocur\Slugify\Slugify;
 
-$slug = new Slugify();
+//$slug = new Slugify();
 
 echo $slug->slugify('Teste com acentuação');
 
@@ -13,7 +13,7 @@ echo $slug->slugify('Teste com acentuação');
 
 // Podemos escolher qual será o "separador" utilizado
 
-$xlug = new Slugify();
+//$xlug = new Slugify();
 
 echo $xlug->slugify('Testando com outra opção de separador', '_');
 
