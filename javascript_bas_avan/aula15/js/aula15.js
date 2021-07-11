@@ -12,4 +12,4 @@ while(numero <= 150) {
         console.log('O ' +numero+ ' é impar.');
     }
     numero++;
-}
+} 
