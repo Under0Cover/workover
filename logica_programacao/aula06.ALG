@@ -1,4 +1,4 @@
-Algoritmo "semnome"
+Algoritmo "calculoMediaEFrequencia"
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : Antonio Carlos Nicolodi
 // Descrição   : Algoritmo de Cálculo de Média e Frequência
