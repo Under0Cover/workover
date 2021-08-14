@@ -1,6 +1,14 @@
-<?
+<?php
 
-    
+/*
+    include "aula15.php";
+    echo("<hr>");
+    include "aula01.php";
+*/
+
+    include "data.inc";
+    echo("<br>");
+    include "menu.inc";
 
 ?>
 
