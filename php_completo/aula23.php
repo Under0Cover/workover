@@ -58,7 +58,7 @@
 
     };
 
-    $carroUm = new Carro(150, 280);
+    $carroUm = new Carro(150, 280); 
 
 ?>
 
