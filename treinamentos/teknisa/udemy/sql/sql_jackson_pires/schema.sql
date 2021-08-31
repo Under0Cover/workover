@@ -1,0 +1,60 @@
+
+
+CREATE TABLE Clientes
+    (`id` int, `nome` varchar(11), `email` varchar(31))
+;
+    
+INSERT INTO Clientes
+    (`id`, `nome`, `email`)
+VALUES
+    (1, 'Dorette', 'dmatyushkin0@wikipedia.org'),
+    (2, 'Yorker', 'ycuer1@linkedin.com'),
+    (3, 'Cecil', 'cterzo2@google.ru'),
+    (4, 'Angy', 'asnelle3@dagondesign.com'),
+    (5, 'Deb', 'dmudge4@flavors.me'),
+    (6, 'Della', 'dbeckles5@aol.com'),
+    (7, 'Morten', 'mwitchell6@msu.edu'),
+    (8, 'Riley', 'rstubbert7@sciencedaily.com'),
+    (9, 'Gerhardine', 'gferronel8@noaa.gov'),
+    (10, 'Luis', 'lcow9@alexa.com'),
+    (11, 'Debi', 'dholttoma@mapquest.com'),
+    (12, 'Marius', 'mhallfordb@drupal.org'),
+    (13, 'Greta', 'gmcglynnc@taobao.com'),
+    (14, 'Archaimbaud', 'arockhalld@gnu.org'),
+    (15, 'Linoel', 'landreazzie@wix.com'),
+    (16, 'Nichols', 'nagentf@globo.com'),
+    (17, 'Auroora', 'anewlingg@fotki.com'),
+    (18, 'Ivy', 'ikrimmerh@cpanel.net'),
+    (19, 'Felix', 'fhellini@shutterfly.com'),
+    (20, 'Joelie', 'jsnuggsj@github.com'),
+    (21, 'Christel', 'cchattoek@skype.com'),
+    (22, 'Oren', 'omacgebenayl@com.com'),
+    (23, 'Maris', 'mlynaghm@cyberchimps.com'),
+    (24, 'Sande', 'sdominguezn@addthis.com'),
+    (25, 'Grantley', 'ggrossiero@pagesperso-orange.fr'),
+    (26, 'Frayda', 'fromainep@mayoclinic.com'),
+    (27, 'Paxton', 'pferrigeq@freewebs.com'),
+    (28, 'Sumner', 'sgoudyr@jigsy.com'),
+    (29, 'Glenine', 'glandegs@eventbrite.com'),
+    (30, 'Eveleen', 'etysont@dion.ne.jp'),
+    (31, 'Ginny', 'ggissingu@feedburner.com'),
+    (32, 'Pail', 'phaddacksv@bbc.co.uk'),
+    (33, 'Adolph', 'ademainew@microsoft.com'),
+    (34, 'Tiler', 'tmccaheyx@woothemes.com'),
+    (35, 'Anallese', 'arowelly@ucla.edu'),
+    (36, 'Johann', 'jcartnerz@sfgate.com'),
+    (37, 'Grete', 'gbeddows10@time.com'),
+    (38, 'Eziechiele', 'estruys11@odnoklassniki.ru'),
+    (39, 'Joby', 'jadelsberg12@plala.or.jp'),
+    (40, 'Scot', 'swinwood13@odnoklassniki.ru'),
+    (41, 'Kippie', 'khatrick14@columbia.edu'),
+    (42, 'Gayel', 'grevel15@go.com'),
+    (43, 'Shem', 'sbadam16@macromedia.com'),
+    (44, 'Salmon', 'soreagan17@spotify.com'),
+    (45, 'Gabrielle', 'gsealand18@ning.com'),
+    (46, 'Darn', 'dspringall19@nba.com'),
+    (47, 'Vere', 'vbarthelet1a@google.com.hk'),
+    (48, 'Lowe', 'lpyson1b@bigcartel.com'),
+    (49, 'Roxana', 'rmackessock1c@uiuc.edu'),
+    (50, 'Marsha', 'mcrippell1d@auda.org.au')
+;
