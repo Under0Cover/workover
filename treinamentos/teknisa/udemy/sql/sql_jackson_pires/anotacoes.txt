@@ -1,0 +1,156 @@
+Curso de Banco de Dados e ANSI SQL para iniciantes
+
+Instrutor: Jackson Pires
+
+PARTE 01 DE 04
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+
+
+Banco de Dados
+-------------------------------------------------------------------------------------------------
+Vamos entender o que é Banco de Dados
+
+    Para entender o que é Banco de Dados precisamos saber a diferença entre:
+        * Dados
+            -> Sequência de símbolos quantificados ou quantificáveis
+                (Eles não tem sentido.)
+        * Informação
+            -> São dados tratados
+
+O computador não armazena informações, armazena dados.
+Por isso o nome é dado de Banco de Dados, não Banco de Informações.
+O computador armazena os dados, para que nos possamos obter informações.
+
+Então, um Banco de Dados (em inglês database) é uma entidade na qual é possível armazenar dados de maneira estruturada e com a menor redundância possível.
+
+
+
+SGBD
+-------------------------------------------------------------------------------------------------
+E para que o usuário consiga manipular os dados e obter as informações, ele precisa de um sistema de gerenciamento de banco de dados, ou SGBD.
+O SGBD é um software que possui recursos capazes de manipular o banco de dados e interagir com o usuário.
+
+Agora que já sabemos o que é um banco de dados e o que é um SGBD (Sistema Gerenciador de Banco de Dados), vamos descobrir o que significa um SQL
+
+
+SQL
+-------------------------------------------------------------------------------------------------
+Structured Query Language, ou Linguagem de Consulta Estruturada é a linguagem de pesquisa declarativa para um banco de dados relacional
+
+O que eu posso fazer com SQL?
+    * Executar consultas no Banco de Dados
+    * Inserir novos registros no Banco de Dados
+    * Atualizar registros no Banco de Dados
+    * Apagar registros no Banco de Dados
+    * Criar novas tabelas para o Banco de Dados
+    * Modificar permissões de acesso a uma tabela do Banco de Dados
+
+
+ANSI SQL
+-------------------------------------------------------------------------------------------------
+O SQL 'padrão' surgiu na IBM, no anos 70
+
+ANSI    -> American National Standards Institute    -> 1986
+ISO     -> International Standard Organization      -> 1987
+
+A ANSI é um instituto americano de padronização dos 'dialetos' de SGBD
+
+Padrinizações:
+    SQL-86
+    SQL-89
+    SQL-92
+    SQL:1999
+    SQL:2003
+    SQL:2008
+
+
+DQL, DDL, DML, DCL
+-------------------------------------------------------------------------------------------------
+DQL - Data Query Language               -> Consulta dos dados
+DDL - Data Definition Language          -> Definição de dados
+DML - Data Manipulation Language        -> Manipulação de dados
+DCL - Data Control Language             -> Controle dos dados
+DTL - Data Transaction Language         -> Transação dos dados
+
+
+DQL: é o comando usado para seleção dos dados, também chamada de "recuperação".
+DDL: é o comando utilizado para criar as estruturas.
+DML: é o comando usado para manipular dados. A DML está muito próxima da DQL; pórem a DML vai inserir, atualizar, deletar os dados.
+DCL: são as definições de quem pode acessar os dados dentro do banco; quem pode visualizar os dados.
+DTL: é as instruções para manipular as transações.
+
+                                                                SQL LANGUAGE STATEMENTS
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+           |                                  |                                |                                       |
+        * DML                              * DDL                            * DCL                                   * TCL
+    -> SELECT  ->  (DQL)                   -> CREATE                        -> GRANT                                -> BEGIN
+    -> INSERT                              -> ALTER                         -> REVOKE                               -> TRAN
+    -> UPDATE                              -> DROP                                                                  -> COMMIT
+    -> DELETE                                                                                                       -> ROLLBACK
+    
+OBS:-> O OBJETIVO DO CURSO SEGUNDO O INSTRUTOR É ENSINAR O BÁSICO SOBRE AS DML E DDL.
+
+
+-------------------------------------------------------------------------------------------------
+TIPOS DE DADOS
+
+--> TIPOS PRIMITIVOS
+    -> NUMÉRICOS
+        # INTEIROS: 1, 45, 56, 90
+        # REAIS: 1.67, 6.43, 7.89
+    -> CARACTERES / STRINGS
+        # "A", "Jackson", "?", "1", "34"
+    -> BOOLEANO / LÓGICO
+        # TRUE  
+        # FALSE
+
+--> TIPOS NÃO PRIMITIVOS
+    -> Data
+        # 13/10/2005
+
+
+-------------------------------------------------------------------------------------------------
+SCHEMAS, TABELAS, CAMPOS E REGISTROS
+
+--> SCHEMAS: É o conjunto de tabelas do banco de dados.
+--> TABELAS: É o conjunto de campos e registros.
+--> CAMPOS: É a coluna.
+--> REGISTROS: É a linha.
+
+
+-------------------------------------------------------------------------------------------------
+CONHECENDO ALGUNS AMBIENTES
+
+--> SQLFiddle           -> http://sqlfiddle.com
+--> SQLite Online       -> https://sqliteonline.com
+--> SQLite Browser      -> http://sqlitebrowser.org
+--> SQL Trylt Editor    -> https://www.w3schools.com/sql/trysql.aps?filename=trysql_select_all
+
+
+-------------------------------------------------------------------------------------------------
+O que é CSV?
+
+--> CSV é a sigla de Comma-separated values
+    Fazendo a tradução é algo tipo "Valores separados por vírgula"
+    Também pode ser utilizado o ponto e vírgula
+
+    Lorem ipslum dos dados:
+        -> Mockaroo         https://www.mockaroo.com
+
+
+-------------------------------------------------------------------------------------------------
+Importanto CSV no SQLFiddle
+
+
+-------------------------------------------------------------------------------------------------
+Importanto Exel para CSV
+
+
+-------------------------------------------------------------------------------------------------
+
+
+PARTE 02 DE 04
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+--> CLÁUSULA SELECT
