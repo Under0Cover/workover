@@ -189,3 +189,20 @@ PARTE 02 DE 04
 
 -------------------------------------------------------------------------------------------------
 --> Aliases
+
+
+-------------------------------------------------------------------------------------------------
+--> CRUD
+    CRUD é um acrônimo e as suas iniciais significam:
+        * Create
+        * Read
+        * Update
+        * Delete
+
+    -> 'Read' já foi realizado nas tarefas acimas
+
+    -> 'Create'
+    
+    -> 'Update'
+
+    -> 'Delete'

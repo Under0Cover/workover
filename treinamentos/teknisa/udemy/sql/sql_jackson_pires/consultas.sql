@@ -88,3 +88,32 @@ SELECT CustomerID AS 'Código', CustomerName AS 'Nome do cliente' FROM Customers
 
 -- Sintaxe do Aliases
 SELECT field1 AS alias_name FROM <table>
+
+-------------------------------------------------------------------------------------------------
+-- Obs: 'Read' do CRUD já foi realizado
+-- 'Create' do CRUD
+INSERT INTO Customers (CustomerID, CustomerName, ContactName, Address, City, PostalCode, Country) 
+VALUES (92, 'Jackson Pires', 'José Neves', 'Rua Tal, 35', 'Recife', '00001', 'Brazil')
+
+-- Sintaxe do INSERT
+INSERT INTO table_name (field1, field2)
+VALUES (value1, value2)
+
+-- 'Update' do CRUD
+UPDATE Customers SET CustomerName = 'João da Silva'
+WHERE CustomerID = '92'
+
+UPDATE Customers SET Address = 'Rua da Consolação, 92'
+WHERE CustomerID = '92'
+
+UPDATE Customers SET PostalCode = '44875-090'
+WHERE CustomerID = '92'
+
+-- Sintaxe do UPDATE
+UPDATE table_name SET <field1> = <value1>, <field2> = <value2> WHERE <condition>
+
+-- 'Delete' do CRUD
+DELETE FROM Customers WHERE CustomerID = '92'
+
+-- Sintaxe do DELTE
+DELETE FROM table_name WHERE <condition>
