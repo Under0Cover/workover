@@ -195,3 +195,6 @@ CREATE TABLE Clientes (
     -- Sintaxe do FOREIGN KEY
     FOREIGN KEY (field)
     REFERENCES table (field)
+
+-------------------------------------------------------------------------------------------------
+--> CHAVE ESTRANGEIRA
