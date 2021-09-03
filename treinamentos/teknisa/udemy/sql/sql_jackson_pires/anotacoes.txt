@@ -206,3 +206,84 @@ PARTE 02 DE 04
     -> 'Update'
 
     -> 'Delete'
+
+
+-------------------------------------------------------------------------------------------------
+--> CONHECENDO OUTROS AMBIENTES
+
+    -> SQLite
+        -> Tipos de Dados no SQLite
+            -> PRIMITIVOS
+                * CARACTERES
+                * STRINGS
+                * INTEIROS
+                * REAL
+                * BOOLEANO
+                -> https://sqlite.org/datatype3.html
+    
+    -> ANSI SQL Tipos de Dados
+        * https://docs.oracle.com/cd/A57673_01/DOC/server/doc/SCN73/ch6.htm#ansi_datatypes
+
+
+-------------------------------------------------------------------------------------------------
+--> PROJETANDO UMA NOVA TAVELA
+
+    -> MODELAGEM DE DADOS
+        CITADO PELO GOOGLE:
+            Modelagem de dados é o processo anterior a construção do banco de dados em um software.
+            Etapas do processo de modelagem;
+            Determina a forma (conceitual) como os dados estarão dispostos.
+            Determina as estruturas no banco.
+
+        Projetar como os dados serão armazenados no banco.
+
+        -> https://www.oracle.com/database/technologies/appdev/datamodeler.html
+
+
+-------------------------------------------------------------------------------------------------
+--> PRIMEIRA MODELAGEM
+
+
+-------------------------------------------------------------------------------------------------
+--> CRIANDO A PRIMEIRA TABELAS
+
+
+-------------------------------------------------------------------------------------------------
+--> IMPORTAR E EXPORTAR SEU BD
+
+
+-------------------------------------------------------------------------------------------------
+--> APAGANDO UMA TABELA
+
+
+-------------------------------------------------------------------------------------------------
+--> ALTERANDO UMA TABELA
+
+
+-------------------------------------------------------------------------------------------------
+--> CHAVE PRIMÁRIA
+
+
+-------------------------------------------------------------------------------------------------
+--> AUTO INCREMENTO
+
+
+-------------------------------------------------------------------------------------------------
+--> MODELAGEM RELACIONAL
+
+
+-------------------------------------------------------------------------------------------------
+--> RELACIONANDO TABELAS VIA SQL
+
+
+-------------------------------------------------------------------------------------------------
+--> JOINS
+    * LEFT OUTER JOIN
+
+
+-------------------------------------------------------------------------------------------------
+--> CHAVE ESTRANGEIRA
+
+
+-------------------------------------------------------------------------------------------------
+--> CHAVE ESTRANGEIRA NO ORACLE DATA MODULE
