@@ -1,0 +1,4 @@
+body {background: #121212; display: flex;}
+.typing {color: #fff; font-family: monospace; overflow: hidden; border-right: .15em solid #00D8FF; white-space: nowrap; margin: 0 auto; letter-spacing: .15rem; animation: typing 3.5s steps(30, end), blink-animation .5s step-end infinite;}
+@keyframes typing {from {width: 0;} to {width: 30%;}}
+@keyframes blink-animation {from, to {border-color: transparent;} 50% {border-color: #00D8FF;}}
