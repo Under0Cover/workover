@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+</head>
+<body>
+    <h1>Crie a sua conta na Hello Pizza</h1>    
+    <form action="http://arquivo.devmedia.com.br/projeto/requisicao.php" method="get">
+        <fieldset>
+            <legend>Conta:</legend>
+            <div class="email">
+                <label>Email:</label>
+                <input type="email" name="email" required minlength="5" maxlength="256">
+            </div>
+            <div class="senha">
+                <label>Senha:</label>
+                <input type="password" name="senha" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Pessoal:</legend>
+            <div class="nome">
+                <label>Nome:</label>
+                <input type="text" placeholder="Ex Oliver" name="nome" required>
+            </div>
+            <div class="telefone">
+                <label>Telefone:</label>
+                <input type="text" placeholder="Ex (99) 99999-9999" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" name="telefone" required>
+            </div>
+            <div class="sexo">
+                <label>Sexo:</label>
+                <input type="radio" value="Masculino" name="sexo" checked>
+                <label>Masculino</label>
+                <input type="radio" value="Feminino" name="sexo">
+                <label>Feminino</label>
+            </div>
+            <div class="data">
+                <label>Data de Nascimento:</label>
+                <input type="date" name="nascimento" required>
+            </div>
+            <div class="enviarFoto">
+                <label>Foto de perfil:</label>
+                <input type="file" accept="image/*" name="foto">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço:</legend>
+            <div class="rua">
+                <label>Rua:</label>
+                <input type="text" name="rua" required>
+            </div>
+            <div class="numero">
+                <label>Número</label>
+                <input type="number" min="1" name="numero" required>
+            </div>
+            <div class="complemento">
+                <label>Complemento:</label>
+                <input type="text" name="complemento" required>
+            </div>
+            <div class="cidade">
+                <label>Cidade:</label>
+                <input type="text" name="cidade" required>
+            </div>
+            <div class="estado">
+                <label>Estado:</label>
+                <select name="estado">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Anúncio:</legend>
+            <div class="conheceu">
+                <label>Como conheceu a Hello Pizza</label>
+                <textarea placeholder="Explique para a gente como você conheceu a Hello Pizza:" name="comoConheceu"></textarea>
+            </div>
+            <div class="ofertas">
+                <input type="checkbox" checked name="receberOfertas">
+                <label>Deseja receber ofertas por e-mail?</label>
+            </div>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
