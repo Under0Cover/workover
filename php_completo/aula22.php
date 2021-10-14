@@ -1,7 +1,4 @@
 <?php
-
-use Carro as GlobalCarro;
-
 abstract class carroBase {
         public $potencia;
         public $velocidadeMaxima;

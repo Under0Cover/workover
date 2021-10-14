@@ -1,7 +1,5 @@
 <?php
 
-use Carro as GlobalCarro;
-
 class Carro {
         var $tipo;
         /* Tipos de Carros:
