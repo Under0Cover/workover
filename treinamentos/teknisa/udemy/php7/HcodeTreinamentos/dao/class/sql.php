@@ -4,16 +4,16 @@
         private $conn;
 
         public function __construct() {
-            $this->conn = new PDO("mysql:host=localhost; dbname=dbphp7", "root", "root");
+            $this->conn = new PDO("sqlsrv:Database=dbphp7; server=localhost; ConnectionPooling=0", "teknisa", "teknisa");
         }
 
-        private function setParams($statement, $parameters = array ()) {
+        public function setParams ($statement, $parameters = array()) {
             foreach ($parameters as $key => $value) {
                 $this->setParam($statement, $key, $value);
             }
         }
 
-        private function setParam($statement, $key, $value) {
+        private function setParam ($statement, $key, $value) {
             $statement->bindParam($key, $value);
         }
 
