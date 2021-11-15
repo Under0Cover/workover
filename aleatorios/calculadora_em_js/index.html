@@ -1,0 +1,44 @@
+<!-- Link da vídeo aula: https://www.youtube.com/watch?v=kBKYBO9G3R8-->
+<!-- Canal: Coding Mind Brasil -->
+<!--
+    Página index.html da Calculadora
+    Objetivo: Recriar uma calculadora práticando JavaScript e HTML
+    Notas: 
+        1) A vídeo aula implementa CSS inline, por boas práticas, eu escolhi fazer um arquivo separado.
+        2) É próvavel que haja diferenças entre o projeto final da vídeo aula e o meu próprio, aliás, esse é um dos intuitos da reprodução.
+        3) O mesmo pensamento de possuir um arquivo CSS é usado no caso do JS, um arquivo separado
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples em JavaScript e HTML</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <form>
+        <table class="tabela">
+            <tr>
+                <th colspan="5">Calculadora Simples em JavaScript e HTML</th>
+            </tr>
+            <tr>
+                <td>val1 <input type="text" name="valor1" id="valor1"></td>
+                <td>
+                    <select name="sinal" id="sinal">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+                </td>
+                <td>val2 <input type="text" name="valor2" id="valor2"></td>
+                <td><input type="button" value="=" onclick="calcular()"></td>
+                <td><input type="text" name="resultado" id="resultado"></td>
+            </tr>
+        </table>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
