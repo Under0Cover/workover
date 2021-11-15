@@ -9,13 +9,20 @@
 </head>
 <body>
     <div id="app">
-        <p>Curso: {{ curso }}</p>
+        <p v-once>Nome inteiro: {{ nome }}</p>
+        <p>Nome modificado: {{ getNome() }}</p>
     </div>
     <script type="text/javascript">
         new Vue({
             el: '#app',
             data: {
-                curso: 'VueJS'
+                nome: 'Plínio Naves'
+            },
+            methods: {
+                getNome: function() {
+                    this.nome = 'Tales Oliver';
+                    return this.nome;
+                }
             }
         });
     </script>

@@ -9,13 +9,14 @@
 </head>
 <body>
     <div id="app">
-        <p>Curso: {{ curso }}</p>
+        <p>{{ curso }}</p>
+        <p v-html="curso"></p>
     </div>
     <script type="text/javascript">
         new Vue({
             el: '#app',
             data: {
-                curso: 'VueJS'
+                curso: 'Curso de <span style="color: red">VueJS</span>'
             }
         });
     </script>

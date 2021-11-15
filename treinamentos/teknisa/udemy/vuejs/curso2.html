@@ -9,13 +9,19 @@
 </head>
 <body>
     <div id="app">
-        <p>Curso: {{ curso }}</p>
+        <p>Curso: {{ curso }} | {{ nomeDoInstrutor() }}</p>
     </div>
     <script type="text/javascript">
         new Vue({
             el: '#app',
             data: {
-                curso: 'VueJS'
+                curso: 'VueJS',
+                instrutor: 'Plínio Naves'
+            },
+            methods: {
+                nomeDoInstrutor: function(){
+                    return this.instrutor;
+                }
             }
         });
     </script>
