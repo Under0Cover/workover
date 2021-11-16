@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS - Guia Completo</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <!--
+        O objetivo da aula é fazer uma comparação em relação ao whatcher e o computed.
+        Para exemplificar ambas utilizações, vamos exibir um nome completo na tela. Esse nome completo é composto pelo primeiro nome e último nome, e deverá sofrer alterações quando as suas partes sofrerem alterações. Para tal, vamos utilizar o 'watch' como 'observador' dessas mudanças.
+    -->
+    <div id="app">
+        <p>Nome: {{ nomeCompleto }}</p>
+        <button @click="alterarNome">Alterar Nome</button>
+    </div>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                primeiroNome: 'Plínio',
+                ultimoNome: 'Naves',
+                /*
+                Vamos deixar essa parte comentada para mostrar como fazer a mesma coisa com o computed
+                nomeCompleto: 'Plínio Naves'
+            },
+            watch: {
+                primeiroNome: function(novoPrimeiroNome, anitgoPrimeiroNome) {
+                    this.nomeCompleto = novoPrimeiroNome + ' ' + this.ultimoNome;
+                    // Caso o primeiro nome sofra alterações, essas serão substituídas acima
+                },
+                ultimoNome: function(novoUltimoNome, antigoUltimoNome) {
+                    this.nomeCompleto = this.primeiroNome + ' ' + novoUltimoNome;
+                    // A mesma ideia segue aqui com o último nome
+                }*/
+                //  Perceba que o código acabou se tornando muito repetitivo...
+            },
+            methods:{
+                // Exemplos simples para mudar o nome
+                alterarNome: function(event) {
+                    this.primeiroNome = 'Naves';
+                    this.ultimoNome = 'Plínio';
+                }
+            },
+            computed: {
+                nomeCompleto: function() {
+                    return this.primeiroNome + ' ' + this.ultimoNome;
+                    // É característica do computed só será re-executada, caso sofra alterações.
+                }
+            }
+        });
+    </script>
+</body>
+</html>

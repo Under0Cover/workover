@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS - Guia Completo</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <a v-bind:href="docs">VueJS</a>
+        <br>
+        <button v-on:click="onClick">Clique</button>
+        <!-- 
+            A fim de facilitar a vida do programador, o Vue se utiliza de alguns atalhos para algumas diretivas muito usadas nos códigos.
+            A partir de agora, iremos utilizar dois desses atalhos, para "encurtar código" e começar a se familiarizar com esses atalhos.
+            Os atalhos são:
+                Para o código "v-bind" estaremos utilizando o atalho: :
+                    Ao invés de adicionarmos o "v-bind" como no exemplo:
+                        <a v-bind:href="docs">VueJS</a>
+                    Utilizaremos a forma encurtada:
+                        <a :href="docs">VueJS</a>
+                    Por baixo o Vue consegue entender os dois pontos.
+                Para o código "v-on" estaremos utilizando o atalho: @
+                    Como referência, o antes:
+                        <button v-on:click="onClick">Clique</button>
+                    E agora:
+                        <button @click="onClick">Clique</button>
+            Para efeito de comparação, agora o mesmo código que o código acima, com a utilização dos atalhos, veja:
+        -->
+        <hr>
+        <a :href="docs">VueJS</a>
+        <br>
+        <button @click="onClick">Clique</button>
+    </div>  
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                docs: 'https://vuejs.org'
+            },
+            methods: { 
+                onClick: function(event){
+                    console.log('Evento ', event.type);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

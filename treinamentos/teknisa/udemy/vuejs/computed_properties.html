@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS - Guia Completo</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <!--
+        Já vimos que o Vue permite expressões simples diretamente no templete
+            No exercício de hoje, vamos pegar o parágrafo:
+                <p>{{ Curso }}</p>
+            Que trás a informação da variável (até agora eu estou associando o data.curso como se fosse uma variável, com mais aulas e um pouco mais avançado nos estudos, talvez eu modifique essa tratativa, mas por hora é como eu me sinto confortável de associar) 'curso'
+            E como o Vue permite expressões JavaScript direto, mas fazer um exemplo dessa permissão. E iremos inverter as palavras do variável 'curso'
+            O seguinte parágrafo será acrescentado:
+                <p>{{ Curso }} => {{ curso.split('').reverse().join()</p>
+            Vamos pegar a string contida em 'curso', converter os caracteres como um array, a fim de manipular as posições dos caracteres, .split(''), inverter os caracteres, .reverse(), e por fim, unir de volta o array em uma string.
+            Vamos ver os efeitos na prática:
+    -->
+    <div id="app">
+        <p>{{ curso }} => {{ curso.split('').reverse().join('') }}</p>
+    
+    <!--
+        Esse tipo de permissão é muito útil, porém deve-se ter cuidado na forma de usar. Esse tipo de permissão, só deve ser usada de forma mais simples.
+        Quando o sistema precisa de fazer mais cálculos, a forma pedida é fazer utilizando a opção 'Computed Properties'.
+            As vantagens:
+                - código organizado;
+                - visual limpo;
+                - bloqueio de redundância;
+    -->
+        <p>{{ curso }} => {{ cursoInvertido }}</p>
+        <!-- -->
+        <input @keyup.enter="alterarNomeDoCurso" placeholder="Alterar nome do Curso!">
+    </div>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                curso: 'Curso de VueJS'
+            /*
+                Essa opção fornecida é um recurso chmado Computed Properties, ou como segureido, Dados Computados. A forma de utilização é utilizar esses dados computados, como se fosse uma propriedade (vou começar a chama assim) do objeto data.
+                Vamos ver na prática então, como isso funciona.
+                Dentro da instância 'new Vue', nós vamos criar uma nova propriedade, no objeto raiz, chamada 'computed'. Essa propriedade é um objeto JavaScript. Onde nós podemos criar os dados computados. Que também são funções e devem retorna algo síncrono. Não pode haver retornos assícronos.
+                Com o objetivo de fazer a mesma coisa que o parágrafo anterior, porém de uma forma mais elaborada:
+            */
+            },
+            computed: {
+                cursoInvertido: function(){
+                    return this.curso.split('').reverse().join('');
+                }
+                /*
+                Agora ficou assim. Tem um dado computado, o cursoInvertido, que inverte a string da propriedade curso. E a sacada é assim, pra acessar as propriedade do objeto data, tem que usar o this. O Vue deixa todas as propriedades disponíveis na instância.
+                */
+            },
+                /*
+                    Método para troca de nome da proprieda curso
+                */
+            methods: {
+                alterarNomeDoCurso: function(event){
+                    this.curso = event.target.value;
+                }
+            }
+        });
+    </script>
+        <!--
+            Agora fica assim:
+                <p>{{ curso }} => {{ cursoInvertido }}</p>
+            Vamos ver na prática os dois resultados iguais.
+        -->
+
+        <!-- -->
+
+        <!--
+            O Vue entender que a propriedade cursoInvertido depende da propriedade curso. E sempre que a propriedade for atualizada, o Vue vai automaticamente atualizar o computed, sem oferecer nenhum problema. Vamos utilizar o input com o v-on abreviado para modificar a propriedade.
+        -->
+
+        <!-- -->
+
+        <!--
+            Muito bom exemplo!
+        -->
+</body>
+</html>

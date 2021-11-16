@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS - Guia Completo</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <!--
+            Para pode exibir a diferença entre um computed e um método, vamos aproveitar o exemplo anterior e fazer a mesma coisa nos diferentes recursos.
+            Vamos utilizar o exemplo do curso:
+                <p>Nome original: {{ curso }}</p>
+            Vamos fazer a utilização do computed nesse exemplo:    
+                <p>Nome invertido (computed): {{ curso }} => {{ cursoInvertidoComputed }}</p>
+            E vamos utilizar no método com esse exemplo:
+
+        -->
+        <p>Nome original: {{ curso }}</p>
+        <p>Nome invertido (computed): {{ cursoInvertidoComputed }}</p>
+        <p>Nome invertido (method): {{ cursoInvertidoMethods() }}</p>
+        <!-- Atente-se que quando estamos chamando um método, definido no methods, temos que chama igual uma função! -->
+        <p>Autor: {{ nomeDoAutorInteiro ? 'Plínio Naves' : 'Plínio' }}</p> <!--if ternário -->
+        <button @click="nomeDoAutorInteiro = !nomeDoAutorInteiro">Alterar nome do Autor</button>
+        <input @keyup.enter="alterarNomeDoCurso" placeholder="Alterar nome do Curso!">
+    </div>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                curso: 'Curso de VueJS',
+                /* --- */
+                nomeDoAutorInteiro: true
+            },
+            computed: {
+                cursoInvertidoComputed: function(){
+                    console.log('Computed Executada');
+                    return this.curso.split('').reverse().join('');
+                }
+            },
+            methods: {
+                alterarNomeDoCurso: function(event){
+                    this.curso = event.target.value;
+                },
+                /*
+                Aqui vai o método
+                */
+                cursoInvertidoMethods: function() {
+                    console.log('Methods Executada');
+                    return this.curso.split('').reverse().join('');
+               }
+            }
+        });
+    </script>
+    <!--
+        Então qual a diferença?
+        A diferença é técnica. As computed são cacheadas e só são re-executada caso a popriedade 'curso' seja alterada. No caso dos methods, ele é chamado em cada nova renderização. Mesmo se não tiver ligação nenhuma com o que o methods faz.
+        Para mostrar o sistema de cache das computed, vamos fazer um exemplo.
+        Vamos adicionar uma nova propriedade no data, que será um booleano.
+    -->
+</body>
+</html>
