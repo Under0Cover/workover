@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS - Guia Completo</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <!--
+            Quando utilizar um watcher?
+            - Quando for fazer uma chamada assíncrona
+            - Quando não for receber nenhum retorno
+        -- AS COMPUTED SE ASSEMELHAM A UM GETTER E POR PADRÃO UM GETTER TEM QUE RETORNAR ALGO E SÍNCRONO
+        Então, quando for fazer uma conexão com um api, devemos usar os watchers. E quando for um retorno síncrono, usamos as computed.
+        -->
+        <p>Nome: {{ nomeCompleto }}</p>
+        <button @click="alterarNome">Alterar Nome</button>
+    </div>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                nomeCompleto: 'Plínio Naves',
+            },
+            methods:{
+                alterarNome: function(event) {
+                    this.nomeCompleto = "Naves Plínio";
+                }
+            },
+            /*
+                E o que vamos fazer?
+                Vamos ouvir alterações na propriedade nomeCompleto pelo watcher
+                E quando essa operação acontecer, vamos executar uma operação assíncrona para alterar o valor da propriedade nomeCompleto
+            */
+           /*
+                Vamos criar um watch e vamos atribuir um objeto JavaScript para verificar a mudança da propriedade nomeCompleto.
+           */
+           watch: {
+            nomeCompleto: function(novoNomeCompleto, antigoNomeCompleto){
+                // Sempre que ouver alterações no nomeCompleto essa função será chamada
+                // Vamos exemplificar a parte da "ação da assíncronia"
+                // Aqui vamos utilizar o this para fazer a referência
+                var vm = this;
+                // Eu não encontrei referência de como usar o bind() no Vue
+                setTimeout(function() {
+                    // O "retorno" da "api"
+                    // Essa função é uma closure
+                    vm.nomeCompleto = "Nome resetado!";
+                }, 3000)
+            }
+           }
+        });
+    </script>
+</body>
+</html>

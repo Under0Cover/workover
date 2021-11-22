@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS - Guia Completo</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <!--
+            
+        -->
+        <input :value="nome" @input="nome = $event.target.value">
+        <input v-model="nome">
+        <!-- Os dois inputs fazem a mesma coisa... -->
+        <p>Nome: {{ nome }}</p>
+     </div>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                nome: 'Plínio',
+            }
+        });
+    </script>
+</body>
+</html>

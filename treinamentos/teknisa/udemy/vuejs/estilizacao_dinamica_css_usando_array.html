@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS - Guia Completo</title>
+    <script src="https://unpkg.com/vue"></script>
+    <style>
+        .caixa {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            margin-right: 10px;
+            background-color: gray;
+        }
+        .coral {
+            background-color: lightcoral;
+        }
+        .verde {
+            background-color: lightgreen;
+        }
+        .azul {
+            background-color: lightblue;
+        }
+        .circulo {
+            border-radius: 100%;
+        }
+        li {
+            list-style-type: none;
+            display: inline-block;
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            padding: 10px;
+            margin-left: 25px;
+        }
+        ul {
+            padding: 0;
+        }
+        p {
+            text-transform: uppercase;
+            margin-left: 30px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div 
+            class="caixa"
+            :class="{coral: aplicarClasse }"
+            @click="aplicarClasse = !aplicarClasse">
+        </div>
+        <hr>
+        <div 
+            class="caixa"
+            :class="nomeDaClasse">
+        </div>
+        <input v-model="nomeDaClasse" placeholder="Nome da Classe CSS">
+        <li>
+            <ul>Lista de Classe que servem de exemplo:</ul>
+            <ul>Coral</ul>
+            <ul>Verde</ul>
+            <ul>Azul</ul>
+            <ul>Círculo</ul>
+        </li>
+        <hr>
+        <div 
+            class="caixa"
+            :class="classesCSS">
+                <p>Clique na 1ª DIV</p>
+        </div>
+        <div
+            class="caixa"
+            :class="['circulo', nomeDaClasse, {verde: aplicarClasse}]"
+            >
+            <p>Clique na 1ª DIV</p>
+        </div>
+     </div>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                aplicarClasse:false,
+                nomeDaClasse: ''
+            },
+            computed: {
+                classesCSS: function(){
+                    return {
+                        azul: this.aplicarClasse,
+                        circulo: this.aplicarClasse,
+                        verde: !this.aplicarClasse 
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

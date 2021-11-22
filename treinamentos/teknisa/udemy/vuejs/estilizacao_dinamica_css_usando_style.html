@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS - Guia Completo</title>
+    <script src="https://unpkg.com/vue"></script>
+    <style>
+        #app div {
+            display: inline-block;
+            margin-right: 10px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div 
+            style="width: 200px; height: 200px;"
+            :style="{backgroundColor: cor, height: tamanho + 'px', width: largura + 'px'}">
+        </div>
+        <p>Usando CSS inline</p>
+        <hr>
+        <input v-model="cor" placeholder="Cor">
+        <input v-model="tamanho" placeholder="Altura">
+        <input v-model="largura" placeholder="Largura">
+        <hr><hr><hr><hr><hr>
+        <div :style="estiloCSS"></div>
+        <p>Usando computed (+ 100px)</p>
+        <hr><hr><hr><hr><hr>
+        <div :style="[estiloCSS, {border: '2px solid black', height: '100px', width: '100px'}]"></div>
+        <p>Sintaxe de array</p>
+     </div>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                cor: '',
+                tamanho: '',
+                largura: ''
+            },
+            computed: {
+                estiloCSS: function(){
+                    return {
+                        backgroundColor: this.cor,
+                        height: (parseInt(this.tamanho) + 100) + 'px',
+                        width: (parseInt(this.largura) + 100) + 'px'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

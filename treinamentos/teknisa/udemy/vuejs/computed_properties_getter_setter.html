@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS - Guia Completo</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <!--
+            Por default, as computed, são getters, ou seja, ela somente retorna valores.
+            Você não pode settar algum valor, por padrão você não consegue fazer isso.
+            MAS se por qualquer motivo, você quiser settar algum valor, existe a forma a seguir de realizar.
+            Vamos tentar modificar a computed através do input; quando receber a tecla enter, vai disparar uma função; essa função irá atribuir o valor digitado, no nome completo
+        -->
+        <p>Nome: {{ nomeCompleto }}</p>
+        <input @keyup.enter="alterarNome"> <!-- O input com a chamada -->
+     </div>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                primeiroNome: 'Plínio',
+                ultimoNome: 'Naves'
+            },
+            computed: {
+                nomeCompleto: {
+                    get: function(){
+                        return this.primeiroNome + ' ' + this.ultimoNome;
+                    },
+                    set: function(novoNome) {
+                        var nomes = novoNome.split(' ');
+                        this.primeiroNome = nomes[0];
+                        this.ultimoNome = nomes[nomes.length - 1];
+                    }
+                }
+            },
+            // Implementação da função
+            methods: {
+                alterarNome: function(event) {
+                    this.nomeCompleto = event.target.value;
+                    // Até o momento apresentará erro não possuir um setter
+                }
+            }
+        });
+    </script>
+</body>
+</html>
