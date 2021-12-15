@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS - Guia Completo</title>
+    <script src="https://unpkg.com/vue"></script>
+    <style>
+        .separador {list-style-type: none; border-bottom: 1px solid black;}
+    </style>
+</head>
+<body>
+    <!-- v-for tem prioridade sobre v-if -->
+    <div id="app">
+        <p>Tarefas:</p>
+        <ul>
+            <li v-for="tarefa in tarefas" :key="tarefa.id" v-if="!tarefa.completa">{{ tarefa.titulo }}</li>
+            <!-- A forma acima é uma forma válida de trabalhar, mas (e como sempre existe um 'mas', pensando em performance e toda aquela conversa longa de "E se for muito longa?", há outra forma de fazer)-->
+        </ul>
+        <hr><hr>
+        <ul>
+            <li v-for="tarefa in tarefasIncompletas" :key="tarefas.id">{{ tarefa.titulo }}</li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                tarefas: [
+                    { id: 1, titulo: 'Aprender JavaScript', completa: true },
+                    { id: 2, titulo: 'Aprender VueJS', completa: false },
+                    { id: 3, titulo: 'Aprender Vuex', completa: true },
+                    { id: 4, titulo: 'Aprender VueRouter', completa: false }
+                ]
+            },
+            computed: {
+                tarefasIncompletas: function() {
+                    return this.tarefas.filter(function(tarefa) {
+                        return !tarefa.completa;
+                    })
+                }
+            }
+        });
+    </script>
+</body>
+</html>
