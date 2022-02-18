@@ -1,7 +1,0 @@
-COMANDOS PARA SEREM UTILIZADOS NO CURSO:
-
-1) FAZER A IDENTIFICAÇÃO NO GIT
-
-	git config --global user.name 'nome'
-	git config --global user.email 'email@exemplo.com'
-
